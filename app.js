@@ -13,11 +13,10 @@ const testSection = document.querySelector("section");
 const terrminate = testSection.querySelector("h1");
 // Same thing as I did on line 2.
 
-//SCROLLMAGIC
 // Following documentation under the 'Usage' area.
 const controller = new ScrollMagic.Controller();
 
-//Scenes
+//First scene constructor
 let scene = new ScrollMagic.Scene({
   duration: 9000, // 9000 is an example time right now. if the video is 9min long, I would possibly put it to 9000. every min = 1000.
   triggerElement: animationIntro, // Calling the first variable defined on line 4.
@@ -31,6 +30,8 @@ let scene = new ScrollMagic.Scene({
 const textAnimation = TweenMax.fromTo(text, 3, { opacity: 1 }, { opacity: 0 });
 // 'Text' is the thing here we want animated.
 // '3' is the durration.
+
+// Second scene Constructor.
 let scene2 = new ScrollMagic.Scene({
   duration: 3000,
   triggerElement: animationIntro,
