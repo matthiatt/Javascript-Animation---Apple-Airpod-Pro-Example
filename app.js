@@ -28,15 +28,16 @@ let scene = new ScrollMagic.Scene({
   .addTo(controller); // Linked in a previous document.
 
 // Using TweenMax from CDN documentation.
-const textAnim = TweenMax.fromTo(text, 3, { opacity: 1 }, { opacity: 0 });
-
+const textAnimation = TweenMax.fromTo(text, 3, { opacity: 1 }, { opacity: 0 });
+// 'Text' is the thing here we want animated.
+// '3' is the durration.
 let scene2 = new ScrollMagic.Scene({
   duration: 3000,
-  triggerElement: animationIntro, //
+  triggerElement: animationIntro,
   triggerHook: 0,
   // All previously explained from lines 19 - 21.
 })
-  .setTween(textAnim) // To get more familiar with this method, then visit - http://scrollmagic.io/docs/animation.GSAP.html
+  .setTween(textAnimation) // To get more familiar with this method, then visit - http://scrollmagic.io/docs/animation.GSAP.html
   // setTween() - is a method used in ScrollMagic GSAP plugin.
   .addTo(controller); //Ref - line 25.
 
