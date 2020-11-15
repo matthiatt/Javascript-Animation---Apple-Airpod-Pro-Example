@@ -1,1 +1,1 @@
-# javascript-animation--Apple-Airpod-Pro-Example
+# Javascript-Animation-Background-Scroll-Magic-Scroll
