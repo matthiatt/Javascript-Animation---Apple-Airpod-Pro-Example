@@ -1,1 +1,1 @@
-# javascript-animation--Apple-Airpod-Pro-Example-
+# javascript-animation--Apple-Airpod-Pro-Example
